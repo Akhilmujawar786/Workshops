@@ -1,0 +1,92 @@
+
+.card {
+    width: 25%;
+    display: flex;
+    align-items: stretch; /* Make all cards stretch to the same height */
+    justify-content: space-evenly;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    box-sizing: border-box;
+    height: max-content;
+    padding: 0.3rem;
+    margin: 1rem;
+
+    /* overflow: hidden; */
+  }
+  .card.expanded {
+    max-height: none; /* Allow the card to expand to its natural height when expanded */
+  }
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: italic;
+    margin-bottom: 5px;
+    /* background-color:  #77a8a8; */
+}
+.imgdiv{
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+   
+}
+.person{
+    margin-left: 2px;
+    text-transform: capitalize;
+
+}
+.date-venue{
+    margin-right: 3px;
+    text-transform: capitalize;
+    font-size: small;
+}
+.read-more{
+    color: #12b0e8;
+    cursor: pointer;
+}
+.refresh-btn2{
+    background-color: #b4161b21;
+    border: 1px solid #b4161b;
+    padding: 0.3rem 1rem;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* box-shadow: 5px 5px 7px 0px #333; */
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .refresh-btn2::before{
+    content: '';
+    background-color: rgb(245, 250, 252);
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s;
+    z-index: -1;
+  }
+  .refresh-btn2:hover::before{
+    transform: scaleX(1);
+  }
+  .empty{
+    font-size: larger;
+    color:  #c83349;
+    margin-bottom: 20px;
+  }
+.description{
+    margin-bottom: 20px ;
+}

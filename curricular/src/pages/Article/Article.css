@@ -1,0 +1,45 @@
+/* Article.css */
+
+/* Loading styles */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+    font-size: 1.5rem;
+    /* You can add animation or loading spinner styles here */
+  }
+  
+  /* Article summary styles */
+  .article-summary {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Example color */
+  }
+  
+  /* Other styles from previous code */
+  .article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .article-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .article-cover {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-content {
+    line-height: 1.6;
+  }
+  /* Add any other styles as needed */
+  
